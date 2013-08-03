@@ -1,8 +1,6 @@
 class Phrase
   attr_reader :text
 
-  NON_WORD_CHARS = /[^\w]+/
-
   def initialize(text)
     @text = String(text)
   end
