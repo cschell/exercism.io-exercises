@@ -22,9 +22,7 @@ class Phrase
   end
 
   def words
-    self.text.gsub(NON_WORD_CHARS,' ')
-             .squeeze(' ')
-             .downcase
-             .split(' ')
+    self.text.downcase
+             .scan(/\w+/)
   end
 end
